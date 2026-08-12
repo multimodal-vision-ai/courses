@@ -1,0 +1,18 @@
+﻿# 临时文件
+*~
+~$*
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Office 临时文件
+~$*.docx
+~$*.pptx
+~$*.xlsx

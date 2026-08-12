@@ -1,0 +1,24 @@
+本地运行 MetaDrive 的安装步骤如下： 
+
+    Step1: 创建环境 metadrive: 
+
+    conda create -n metadrive python=3.11
+    conda activate metadrive
+
+    Step2: 在metadrive环境下安装依赖包: 
+
+    pip install torch torchvision torchaudio -f https://mirrors.aliyun.com/pytorch-wheels/cu128/
+    pip install gymnasium<0.29
+    conda install -n metadrive ipykernel --update-deps --force-reinstall
+
+    Step3: Install MetaDrive via:
+
+    git clone https://github.com/metadriverse/metadrive.git
+    cd metadrive
+    pip install -e .
+
+Kaggle上运行，只需在Notebook开头运行以下代码：
+
+#@title Collect the MetaDrive
+%pip install git+https://github.com/metadriverse/metadrive.git
+
