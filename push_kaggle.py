@@ -25,6 +25,18 @@ for kid, title, fname in notebooks:
     nb = nbformat.read(src, as_version=4)
     nbformat.write(nb, src)
 
+    # Step 1: Delete old kernel
+    try:
+        api.kernels_delete(kid)
+        print(f"Deleted: {kid}")
+    except Exception as e:
+        err = str(e)
+        if "404" in err:
+            print(f"Not found (will create): {kid}")
+        else:
+            print(f"Delete failed ({err[:80]}), trying push anyway")
+
+    # Step 2: Create new kernel
     tmpdir = tempfile.mkdtemp()
     metadata = {
         "id": kid, "title": title, "code_file": fname,
@@ -37,8 +49,10 @@ for kid, title, fname in notebooks:
 
     try:
         api.kernels_push(tmpdir)
-        print(f"https://www.kaggle.com/code/{kid}")
+        print(f"Pushed: https://www.kaggle.com/code/{kid}")
     except Exception as e:
-        print(f"EXISTS: https://www.kaggle.com/code/{kid}")
+        print(f"Push failed: {e}")
 
     shutil.rmtree(tmpdir, ignore_errors=True)
+
+print("\nAll done!")
