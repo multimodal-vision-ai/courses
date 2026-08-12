@@ -1,75 +1,11 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "# 实验二（课堂演示）：自适应视频流的 QoE 优化\n",
-    "\n",
-    "**适用课程**：未来媒体互联网  \n",
-    "**演示时长**：约 12 分钟  \n",
-    "**运行环境**：Kaggle Notebook（CPU，无外部依赖）\n",
-    "\n",
-    "## 演示目标\n",
-    "\n",
-    "模拟视频播放器面对波动网络带宽时，三种策略的表现对比：\n",
-    "- 固定码率（不调节）→ 频繁卡顿\n",
-    "- 启发式规则（缓冲区低就降码率）→ 勉强可用\n",
-    "- Q-learning 强化学习 → 平稳适应\n",
-    "\n",
-    "让学生直观感受\"为什么 YouTube/Netflix 需要自适应码率算法\"。"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import numpy as np\n",
-    "import matplotlib.pyplot as plt\n",
-    "from collections import defaultdict\n",
-    "\n",
-    "print(\"无外部依赖，纯 NumPy 实现 ✅\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# 模拟网络带宽轨迹（Mbps）：模拟 WiFi 信号波动\n",
-    "np.random.seed(42)\n",
-    "T = 200  # 200 个时间步（每步 0.5 秒，共 100 秒）\n",
-    "t = np.arange(T)\n",
-    "\n",
-    "# 生成波动带宽：均值 8 Mbps，有周期性波动和随机噪声\n",
-    "bandwidth = 8 + 3 * np.sin(t * 0.05) + 2 * np.sin(t * 0.15) + np.random.normal(0, 1.5, T)\n",
-    "bandwidth = np.clip(bandwidth, 0.5, 15)  # 限制在 0.5~15 Mbps\n",
-    "\n",
-    "plt.figure(figsize=(14, 4))\n",
-    "plt.plot(t * 0.5, bandwidth, 'b-', alpha=0.7, linewidth=1)\n",
-    "plt.fill_between(t * 0.5, 0, bandwidth, alpha=0.1, color='blue')\n",
-    "plt.axhline(y=2, color='red', linestyle='--', alpha=0.5, label='Low Bitrate (2 Mbps)')\n",
-    "plt.axhline(y=5, color='orange', linestyle='--', alpha=0.5, label='Medium Bitrate (5 Mbps)')\n",
-    "plt.axhline(y=10, color='green', linestyle='--', alpha=0.5, label='High Bitrate (10 Mbps)')\n",
-    "plt.xlabel('Time (s)')\n",
-    "plt.ylabel('Bandwidth (Mbps)')\n",
-    "plt.title('Simulated Bandwidth Fluctuation (100s)')\n",
-    "plt.legend()\n",
-    "plt.grid(True, alpha=0.3)\n",
-    "plt.show()\n",
-    "print(\"三条虚线代表三种可选视频码率。注意带宽在 2~12 Mbps 之间波动——\")\n",
-    "print(\"如果始终选择高码率，网络差时会卡顿；选择低码率则不卡但画质差。\")"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
+﻿import json
+
+path = r"C:\Users\guopi\GitHub\courses\future-media-internet\labs\kaggle-demos\demo2-qoe-optimization.ipynb"
+with open(path, "r", encoding="utf-8") as f:
+    nb = json.load(f)
+
+# Fix cell 3 - the simulator
+nb["cells"][3]["source"] = [
     "# Video playback simulator\n",
     "QUALITY_LEVELS = [2, 5, 10]  # Mbps: Low, Medium, High\n",
     "CHUNK_DURATION = 2.0  # seconds per chunk\n",
@@ -119,15 +55,11 @@
     "    return history, dict(label=label, avg_quality=avg_quality,\n",
     "                         stalls=total_stall, switches=quality_changes, qoe=qoe)\n",
     "\n",
-    "print(\"Simulator ready\")\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
+    'print("Simulator ready")\n',
+]
+
+# Also fix cell 4 - strategies, remove Chinese comments
+nb["cells"][4]["source"] = [
     "# Strategy 1: Always highest bitrate\n",
     "def strategy_fixed(buffer, quality, bw, history):\n",
     "    return 2\n",
@@ -150,33 +82,25 @@
     "        return np.random.randint(0, 3)\n",
     "    return Q_table[state]\n",
     "\n",
-    "print(\"3 strategies defined\")\n",
-    "print(f\"Q-table: {Q_table}\")\n",
-    "print(\"Buffer 0-5s -> Low | 5-10s -> Low | 10-15s -> Med | 15-20s -> High | 20s+ -> High\")\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
+    'print("3 strategies defined")\n',
+    'print(f"Q-table: {Q_table}")\n',
+    'print("Buffer 0-5s -> Low | 5-10s -> Low | 10-15s -> Med | 15-20s -> High | 20s+ -> High")\n',
+]
+
+# Fix cell 5 - run strategies
+nb["cells"][5]["source"] = [
     "# Run all three strategies\n",
     "hist_fixed, stats_fixed = simulate(bandwidth, strategy_fixed, 'Fixed')\n",
     "hist_heur, stats_heur = simulate(bandwidth, strategy_heuristic, 'Heuristic')\n",
     "hist_ql, stats_ql = simulate(bandwidth, strategy_qlearning, 'Q-Learning')\n",
     "\n",
-    "print(\"\\n========== Results ==========\")\n",
-    "for s in [stats_fixed, stats_heur, stats_ql]:\n",
-    "    print(f\"{s[\"label\"]:12s} | AvgQ:{s[\"avg_quality\"]:5.1f} | Stalls:{s[\"stalls\"]:3d} | Switches:{s[\"switches\"]:3d} | QoE:{s[\"qoe\"]:6.1f}\")\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
+    'print("\\n========== Results ==========")\n',
+    'for s in [stats_fixed, stats_heur, stats_ql]:\n',
+    '    print(f"{s[\"label\"]:12s} | AvgQ:{s[\"avg_quality\"]:5.1f} | Stalls:{s[\"stalls\"]:3d} | Switches:{s[\"switches\"]:3d} | QoE:{s[\"qoe\"]:6.1f}")\n',
+]
+
+# Fix cell 6 - visualization, fix the title format
+nb["cells"][6]["source"] = [
     "# Visualization\n",
     "fig, axes = plt.subplots(3, 1, figsize=(14, 10), sharex=True)\n",
     "\n",
@@ -212,42 +136,13 @@
     "plt.tight_layout()\n",
     "plt.show()\n",
     "\n",
-    "print(\"\\nDiscussion:\")\n",
-    "print(\"1. Fixed strategy stalls when bandwidth drops below bitrate\")\n",
-    "print(\"2. Heuristic avoids stalls but switches quality too often\")\n",
-    "print(\"3. Q-Learning stays stable - it learned the bandwidth pattern\")\n",
-    "print(\"4. Real systems (YouTube) use heuristics because RL needs retraining per user\")\n"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## 课堂演示流程（12 分钟）\n",
-    "\n",
-    "1. **0-2 min**：展示带宽波动图，引出问题\"网络时好时坏，视频怎么播？\"\n",
-    "2. **2-4 min**：运行三种策略，展示数值对比表\n",
-    "3. **4-10 min**：逐张讲解三张对比图（固定→启发式→RL），红色竖线=卡顿瞬间\n",
-    "4. **10-12 min**：现场提问 + 总结\n",
-    "\n",
-    "## 课后延伸\n",
-    "\n",
-    "完整版实验中，学生需自己实现启发式规则和 Q-learning 的训练过程，\n",
-    "并对比不同带宽轨迹下的表现。"
-   ]
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "name": "python",
-   "version": "3.10.0"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 4
-}
+    'print("\\nDiscussion:")\n',
+    'print("1. Fixed strategy stalls when bandwidth drops below bitrate")\n',
+    'print("2. Heuristic avoids stalls but switches quality too often")\n',
+    'print("3. Q-Learning stays stable - it learned the bandwidth pattern")\n',
+    'print("4. Real systems (YouTube) use heuristics because RL needs retraining per user")\n',
+]
+
+with open(path, "w", encoding="utf-8") as f:
+    json.dump(nb, f, indent=1, ensure_ascii=False)
+print("demo2 simulator and all texts fixed")
