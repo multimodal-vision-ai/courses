@@ -51,40 +51,40 @@ pip install -e .
 
 ### 实验一：OpenCV 基础与车道线检测
 
-[Chapter3_OpenCVLLD_Local_V1.0.ipynb](notebooks/Chapter3_OpenCVLLD_Local_V1.0.ipynb)
+[Chapter3_OpenCVLLD_Local_V1.0.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/Chapter3_OpenCVLLD_Local_V1.0.ipynb)
 
 学习 OpenCV 图像处理基础（颜色空间转换、边缘检测、ROI 提取），实现基于霍夫变换的车道线检测。
 
 ### 实验二：车道线检测进阶
 
-[kaggle-advanced-lane-detection.ipynb](notebooks/kaggle-advanced-lane-detection.ipynb)
+[kaggle-advanced-lane-detection.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/kaggle-advanced-lane-detection.ipynb)
 
 使用相机标定和透视变换，实现更鲁棒的车道线检测 pipeline，适用于弯道和复杂光照场景。
 
 ### 实验三：交通标志检测
 
-[Chapter4_TrafficSignsDetection_Local_V1.0.ipynb](notebooks/Chapter4_TrafficSignsDetection_Local_V1.0.ipynb)
+[Chapter4_TrafficSignsDetection_Local_V1.0.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/Chapter4_TrafficSignsDetection_Local_V1.0.ipynb)
 
 基于 YOLOv8 训练交通标志检测模型，理解目标检测的数据标注、训练和评估流程。
 
-- 补充：[kaggle-traffic-signs-detection-using-yolov8.ipynb](notebooks/kaggle-traffic-signs-detection-using-yolov8.ipynb) — Kaggle 版本
+- 补充：[kaggle-traffic-signs-detection-using-yolov8.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/kaggle-traffic-signs-detection-using-yolov8.ipynb) — Kaggle 版本
 
 ### 实验四：道路目标检测
 
-[Chapter4_Selfdriving2DTD_Local_V1.0.ipynb](notebooks/Chapter4_Selfdriving2DTD_Local_V1.0.ipynb)
+[Chapter4_Selfdriving2DTD_Local_V1.0.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/Chapter4_Selfdriving2DTD_Local_V1.0.ipynb)
 
 使用 YOLOv8 在自动驾驶场景数据集（KITTI）上进行车辆和行人检测。
 
-- 补充：[Kaggle-kitti-object-detection-yolov8.ipynb](notebooks/Kaggle-kitti-object-detection-yolov8.ipynb) — Kaggle 版本
-- 补充：[kaggle-real-time-traffic-density-estimation-with-yolov8.ipynb](notebooks/kaggle-real-time-traffic-density-estimation-with-yolov8.ipynb) — 实时交通密度估计
+- 补充：[Kaggle-kitti-object-detection-yolov8.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/Kaggle-kitti-object-detection-yolov8.ipynb) — Kaggle 版本
+- 补充：[kaggle-real-time-traffic-density-estimation-with-yolov8.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/kaggle-real-time-traffic-density-estimation-with-yolov8.ipynb) — 实时交通密度估计
 
 ### 实验五：强化学习决策控制
 
-[Chapter5_Metadrive_ppo_Decision_V1.0.ipynb](notebooks/Chapter5_Metadrive_ppo_Decision_V1.0.ipynb)
+[Chapter5_Metadrive_ppo_Decision_V1.0.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/Chapter5_Metadrive_ppo_Decision_V1.0.ipynb)
 
 在 MetaDrive 仿真环境中使用 PPO 算法训练自动驾驶策略，理解状态空间、动作空间和奖励函数设计。
 
-- 补充：[kaggle-metadrive-double-dueling-dqn.ipynb](notebooks/kaggle-metadrive-double-dueling-dqn.ipynb) — Double Dueling DQN 版本
+- 补充：[kaggle-metadrive-double-dueling-dqn.ipynb](https://github.com/multimodal-vision-ai/courses/raw/main/intelligent-perception/labs/notebooks/kaggle-metadrive-double-dueling-dqn.ipynb) — Double Dueling DQN 版本
 
 ## 数据集
 

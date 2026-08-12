@@ -7,8 +7,8 @@
 ## 环境准备
 
 - 安装 [Wireshark](https://www.wireshark.org/download.html)（推荐 4.x 版本）
-- 实验手册：[wireshark实验手册(2024版).docx](wireshark实验手册(2024版).docx)
-- 报告模板：[未来媒体互联网课程实验报告(2024版).docx](未来媒体互联网课程实验报告(2024版).docx)
+- 实验手册：[wireshark实验手册(2024版).docx](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/wireshark%E5%AE%9E%E9%AA%8C%E6%89%8B%E5%86%8C(2024%E7%89%88).docx)
+- 报告模板：[未来媒体互联网课程实验报告(2024版).docx](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/%E6%9C%AA%E6%9D%A5%E5%AA%92%E4%BD%93%E4%BA%92%E8%81%94%E7%BD%91%E8%AF%BE%E7%A8%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A(2024%E7%89%88).docx)
 
 ## 实验内容
 
@@ -20,9 +20,9 @@
 
 | 捕获文件 | 内容 |
 |---|---|
-| [实验一_IP.pcapng](captures/实验一_IP.pcapng) | IP 数据报示例 |
-| [实验一_ping.pcapng](captures/实验一_ping.pcapng) | ICMP Ping 请求与应答 |
-| [实验一_tracert.pcapng](captures/实验一_tracert.pcapng) | Traceroute 路径探测 |
+| [实验一_IP.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E4%B8%80_IP.pcapng) | IP 数据报示例 |
+| [实验一_ping.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E4%B8%80_ping.pcapng) | ICMP Ping 请求与应答 |
+| [实验一_tracert.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E4%B8%80_tracert.pcapng) | Traceroute 路径探测 |
 
 ### 实验二：TCP 与 UDP 传输层
 
@@ -30,8 +30,8 @@
 
 | 捕获文件 | 内容 |
 |---|---|
-| [实验二_TCP.pcapng](captures/实验二_TCP.pcapng) | TCP 连接建立与数据传输 |
-| [实验二_UDP_DNS.pcapng](captures/实验二_UDP_DNS.pcapng) | UDP 承载的 DNS 查询 |
+| [实验二_TCP.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E4%BA%8C_TCP.pcapng) | TCP 连接建立与数据传输 |
+| [实验二_UDP_DNS.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E4%BA%8C_UDP_DNS.pcapng) | UDP 承载的 DNS 查询 |
 
 ### 实验三：HTTP 应用层
 
@@ -39,7 +39,7 @@
 
 | 捕获文件 | 内容 |
 |---|---|
-| [实验三_HTTP.pcapng](captures/实验三_HTTP.pcapng) | HTTP GET/POST 请求与响应 |
+| [实验三_HTTP.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E4%B8%89_HTTP.pcapng) | HTTP GET/POST 请求与响应 |
 
 ### 实验四：RTP/RTCP 多媒体传输
 
@@ -47,7 +47,7 @@
 
 | 捕获文件 | 内容 |
 |---|---|
-| [实验四_RTP_RTCP.pcapng](captures/实验四_RTP_RTCP.pcapng) | RTP 媒体流与 RTCP 控制报文 |
+| [实验四_RTP_RTCP.pcapng](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/labs/captures/%E5%AE%9E%E9%AA%8C%E5%9B%9B_RTP_RTCP.pcapng) | RTP 媒体流与 RTCP 控制报文 |
 
 ## 实验步骤
 

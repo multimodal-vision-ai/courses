@@ -26,14 +26,14 @@
 
 | 章节 | 课件 |
 |---|---|
-| 第 1 讲：概论 | [FMI_Lecture01.pdf](slides/FMI_Lecture01.pdf) |
-| 第 2 讲：网络体系结构 | [FMI_Lecture02.pdf](slides/FMI_Lecture02.pdf) |
-| 第 3 讲：物理层（一）| [FMI_Lecture03-1.pdf](slides/FMI_Lecture03-1.pdf) |
-| 第 3 讲：物理层（二）| [FMI_Lecture03-2.pdf](slides/FMI_Lecture03-2.pdf) |
-| 第 3 讲：物理层（三）| [FMI_Lecture03-3.pdf](slides/FMI_Lecture03-3.pdf) |
-| 第 4 讲：多路复用与交换 | [FMI_Lecture04.pdf](slides/FMI_Lecture04.pdf) |
-| 第 5 讲：传输媒介 | [FMI_Lecture05.pdf](slides/FMI_Lecture05.pdf) |
-| 第 6 讲：媒体接入控制 | [FMI_Lecture06.pdf](slides/FMI_Lecture06.pdf) |
+| 第 1 讲：概论 | [FMI_Lecture01.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture01.pdf) |
+| 第 2 讲：网络体系结构 | [FMI_Lecture02.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture02.pdf) |
+| 第 3 讲：物理层（一）| [FMI_Lecture03-1.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture03-1.pdf) |
+| 第 3 讲：物理层（二）| [FMI_Lecture03-2.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture03-2.pdf) |
+| 第 3 讲：物理层（三）| [FMI_Lecture03-3.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture03-3.pdf) |
+| 第 4 讲：多路复用与交换 | [FMI_Lecture04.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture04.pdf) |
+| 第 5 讲：传输媒介 | [FMI_Lecture05.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture05.pdf) |
+| 第 6 讲：媒体接入控制 | [FMI_Lecture06.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture06.pdf) |
 
 ## 实验
 
