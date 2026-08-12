@@ -1,5 +1,9 @@
 ﻿# 开放课程
 
+<p align="center">
+  <img src="assets/prism_brain_logo_animated.svg" alt="Multimodal Vision AI Lab" width="200">
+</p>
+
 谭国平教授团队承担的教学课程材料。
 
 ## 课程列表
@@ -9,7 +13,7 @@
 
 ## 推荐链接
 
-- 多模态 Document AI 科研训练：[Multimodal Vision AI Learning Center](https://multimodal-vision-ai.github.io/multimodal-document-ai-learning-center/)
+- 多模态视觉AI学习中心：[Multimodal Vision AI Learning Center](https://multimodal-vision-ai.github.io/multimodal-document-ai-learning-center/)
 - 教师主页：[谭国平](https://jszy.hhu.edu.cn/tgp/)
 
 ## 使用说明
