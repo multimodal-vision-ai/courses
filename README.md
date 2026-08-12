@@ -7,7 +7,7 @@
 - [未来媒体互联网](future-media-internet/) — 计算机专业本科生课程，介绍多媒体通信与互联网技术基础
 - [智能感知与自动驾驶技术](intelligent-perception/) — 面向本科生的智能感知与自动驾驶入门课程
 
-## 相关内容
+## 推荐链接
 
 - 多模态 Document AI 科研训练：[Multimodal Vision AI Learning Center](https://multimodal-vision-ai.github.io/multimodal-document-ai-learning-center/)
 - 教师主页：[谭国平](https://jszy.hhu.edu.cn/tgp/)
