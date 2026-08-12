@@ -4,7 +4,7 @@
 
 ## 课程简介
 
-介绍多媒体通信与互联网技术的基本原理、体系结构和协议，涵盖物理层传输、媒体接入控制、多媒体传输协议等核心内容，并通过 Wireshark 实验加深对 TCP/IP 协议栈的理解。
+介绍多媒体通信与互联网技术的基本原理、体系结构和协议，涵盖物理层传输、媒体接入控制、多媒体传输协议等核心内容，并通过协议分析和 AI 实验加深理解。
 
 ## 基本信息
 
@@ -26,30 +26,31 @@
 
 | 章节 | 课件 |
 |---|---|
-| 第 1 讲：概论 | [FMI_Lecture01.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture01.pdf) |
-| 第 2 讲：网络体系结构 | [FMI_Lecture02.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture02.pdf) |
-| 第 3 讲：物理层（一）| [FMI_Lecture03-1.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture03-1.pdf) |
-| 第 3 讲：物理层（二）| [FMI_Lecture03-2.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture03-2.pdf) |
-| 第 3 讲：物理层（三）| [FMI_Lecture03-3.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture03-3.pdf) |
-| 第 4 讲：多路复用与交换 | [FMI_Lecture04.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture04.pdf) |
-| 第 5 讲：传输媒介 | [FMI_Lecture05.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture05.pdf) |
-| 第 6 讲：媒体接入控制 | [FMI_Lecture06.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture06.pdf) |
-
+| 第 1 讲：概论 | [FMI_Lecture01.pdf](slides/FMI_Lecture01.pdf) |
+| 第 2 讲：网络体系结构 | [FMI_Lecture02.pdf](slides/FMI_Lecture02.pdf) |
+| 第 3 讲：物理层（一）| [FMI_Lecture03-1.pdf](slides/FMI_Lecture03-1.pdf) |
+| 第 3 讲：物理层（二）| [FMI_Lecture03-2.pdf](slides/FMI_Lecture03-2.pdf) |
+| 第 3 讲：物理层（三）| [FMI_Lecture03-3.pdf](slides/FMI_Lecture03-3.pdf) |
+| 第 4 讲：多路复用与交换 | [FMI_Lecture04.pdf](slides/FMI_Lecture04.pdf) |
+| 第 5 讲：传输媒介 | [FMI_Lecture05.pdf](slides/FMI_Lecture05.pdf) |
+| 第 6 讲：媒体接入控制 | [FMI_Lecture06.pdf](slides/FMI_Lecture06.pdf) |
 
 ## 实验
 
-Wireshark 抓包实验，涵盖从 IP 层到应用层的协议分析。详见 [labs/README.md](labs/README.md)。
+### 原有实验
 
-### 课堂演示（Kaggle）
+Wireshark 协议分析实验（IP/TCP/HTTP/RTP），详见 [labs/](labs/)。
 
-以下 Notebook 可直接在 Kaggle 上运行，适合课堂投影演示：
+### 新增 AI 实验（2026 试行）
 
-- [实验一：AI 流量分类](labs/kaggle-demos/demo1-traffic-classification.ipynb)
-- [实验二：自适应视频流 QoE](labs/kaggle-demos/demo2-qoe-optimization.ipynb)
-- [实验三：AI 视频质量评估](labs/kaggle-demos/demo3-quality-assessment.ipynb)
-- [实验四：神经压缩 vs JPEG](labs/kaggle-demos/demo4-neural-compression.ipynb)
-- [实验五：语义通信](labs/kaggle-demos/demo5-semantic-communication.ipynb)
+五组 AI+媒体网络实验，含 Kaggle 课堂演示和完整学生指导书：
 
-Kaggle 部署说明：[kaggle-demos/README.md](labs/kaggle-demos/README.md)
+| # | 实验 | 分值 | 指导书 |
+|---|---|---|---|
+| 一 | AI 流量分类 | 25 | [exp01](labs/exp01-traffic-classification/) |
+| 二 | 自适应视频流 QoE | 25 | [exp02](labs/exp02-qoe-optimization/) |
+| 三 | AI 视频质量评估 | 20 | [exp03](labs/exp03-quality-assessment/) |
+| 四 | 神经压缩 vs JPEG | 15 | [exp04](labs/exp04-neural-compression/) |
+| 五 | 语义通信 | 15 | [exp05](labs/exp05-semantic-communication/) |
 
-Wireshark 抓包实验，涵盖从 IP 层到应用层的协议分析。详见 [labs/README.md](labs/README.md)。
+课堂演示：[Kaggle Demo Notebooks](labs/kaggle-demos/) | 教师准备：[教师准备清单](labs/教师准备清单.md)
