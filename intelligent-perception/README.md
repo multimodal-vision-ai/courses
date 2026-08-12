@@ -4,7 +4,7 @@
 
 ## 课程简介
 
-介绍智能感知与自动驾驶的基础知识与关键技术，涵盖视觉传感器原理、车道线检测、目标检测和自动驾驶决策控制等核心主题。实验部分基于 OpenCV 和主流深度学习框架，帮助学生掌握从感知到决策的基本流程。
+介绍智能感知与自动驾驶的基础知识与关键技术，涵盖视觉传感器原理、车道线检测、目标检测和决策控制。实验部分基于 OpenCV、YOLOv8 和 MetaDrive，帮助学生建立从感知到决策的完整流程认识。
 
 ## 基本信息
 
@@ -14,28 +14,21 @@
 ## 章节
 
 1. **绪论** — 智能感知与自动驾驶概述
-2. **视觉传感器** — 摄像头模型、图像处理基础
-3. **自动驾驶车道线检测** — 基于 OpenCV 的传统方法与深度学习方法
-4. **自动驾驶目标检测** — YOLO 等检测模型原理与实践
+2. **视觉传感器** — 摄像头模型与图像处理基础
+3. **自动驾驶车道线检测** — OpenCV 传统方法与深度学习方法
+4. **自动驾驶目标检测** — YOLOv8 原理与道路场景实践
 5. **自动驾驶决策控制** — 基于 MetaDrive 的强化学习决策
 
-## 文件结构
+## 课件
 
-- [slides/` — 课件（PDF），按章节命名
-- [labs/](labs/) — Jupyter Notebook 实验及环境配置说明
+| 章节 | 课件 |
+|---|---|
+| 第 1 章：绪论 | [第1章 - 绪论.pdf](slides/第1章 - 绪论.pdf) |
+| 第 2 章：视觉传感器 | [第2章 - 视觉传感器.pdf](slides/第2章 - 视觉传感器.pdf) |
+| 第 3 章：车道线检测 | [第3章 - 自动驾驶车道线检测.pdf](slides/第3章 - 自动驾驶车道线检测.pdf) |
+| 第 4 章：目标检测 | [第4章 - 自动驾驶目标检测.pdf](slides/第4章 - 自动驾驶目标检测.pdf) |
+| 第 5 章：决策控制 | [第5章 - 自动驾驶决策控制.pdf](slides/第5章 - 自动驾驶决策控制.pdf) |
 
 ## 实验
 
-| 实验 | 文件 |
-|---|---|
-| 车道线检测 | `notebooks/Chapter3_OpenCVLLD_Local_V1.0.ipynb` |
-| 2D 目标检测 | `notebooks/Chapter4_Selfdriving2DTD_Local_V1.0.ipynb` |
-| 交通标志检测 | `notebooks/Chapter4_TrafficSignsDetection_Local_V1.0.ipynb` |
-| 决策控制（PPO）| `notebooks/Chapter5_Metadrive_ppo_Decision_V1.0.ipynb` |
-| 车道线检测（Kaggle）| `notebooks/kaggle-advanced-lane-detection.ipynb` |
-| 目标检测（Kaggle）| `notebooks/Kaggle-kitti-object-detection-yolov8.ipynb` |
-| 决策控制（Kaggle）| `notebooks/kaggle-metadrive-double-dueling-dqn.ipynb` |
-| 交通标志检测（Kaggle）| `notebooks/kaggle-traffic-signs-detection-using-yolov8.ipynb` |
-| 交通密度估计 | `notebooks/kaggle-real-time-traffic-density-estimation-with-yolov8.ipynb` |
-
-环境配置：参见 `labs/metadrive-install-guide.txt`
+Jupyter Notebook 实验，涵盖车道线检测、交通标志识别、目标检测和强化学习决策控制。详见 [labs/README.md](labs/README.md)。

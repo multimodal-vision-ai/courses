@@ -14,34 +14,27 @@
 
 ## 章节
 
-1. **概论** — 多媒体通信发展、网络分类与体系结构（OSI、C/S 与 P2P）、互联网标准
+1. **概论** — 多媒体通信发展、网络分类与体系结构、互联网标准
 2. **网络体系结构** — OSI 分层模型、TCP/IP 协议栈及各层功能
-3. **物理层简介** — 信号时频特性、传输损伤（衰减、延迟、噪声）、信道容量
+3. **物理层简介** — 信号时频特性、传输损伤、信道容量
 4. **多路复用与交换技术** — FDM/WDM/TDM、电路交换与分组交换
-5. **传输媒介** — 导向型与非导向型传输媒介的特性与应用
-6. **媒体接入控制技术** — ALOHA、CSMA 系列协议、受控接入与信道化协议
+5. **传输媒介** — 导向型与非导向型传输媒介
+6. **媒体接入控制技术** — ALOHA、CSMA 系列协议、受控接入
 7. **多媒体传输技术** — 信源编码与压缩、RTP/RTCP 协议
 
-## 文件结构
+## 课件
 
-- [slides/` — 课件（PDF），按章节命名
-- [labs/](labs/) — Wireshark 实验手册、报告模板及捕获数据
-
-## 课件索引
-
-| 章节 | 文件 |
+| 章节 | 课件 |
 |---|---|
-| 第 1 讲：概论 | `FMI_Lecture01.pptx` |
-| 第 2 讲：网络体系结构 | `FMI_Lecture02.pptx` |
-| 第 3 讲：物理层（一）| `FMI_Lecture03-1.pptx` |
-| 第 3 讲：物理层（二）| `FMI_Lecture03-2.pptx` |
-| 第 3 讲：物理层（三）| `FMI_Lecture03-3.pptx` |
-| 第 4 讲：多路复用与交换 | `FMI_Lecture04.pptx` |
-| 第 5 讲：传输媒介 | `FMI_Lecture05.pptx` |
-| 第 6 讲：媒体接入控制 | `FMI_Lecture06.ppt` |
-| Ch02：网络体系结构 | `Ch_02.ppt` |
-| Ch03：物理层 | `Ch_03.ppt` |
-| Ch06：媒体接入控制 | `Ch_06.ppt` |
-| Ch07：多媒体传输 | `Ch_07.ppt` |
-| Ch12：多媒体传输 | `Ch_12.ppt` |
-| CN Lecture11 | `CN_Lecture11.ppt` |
+| 第 1 讲：概论 | [FMI_Lecture01.pdf](slides/FMI_Lecture01.pdf) |
+| 第 2 讲：网络体系结构 | [FMI_Lecture02.pdf](slides/FMI_Lecture02.pdf) |
+| 第 3 讲：物理层（一）| [FMI_Lecture03-1.pdf](slides/FMI_Lecture03-1.pdf) |
+| 第 3 讲：物理层（二）| [FMI_Lecture03-2.pdf](slides/FMI_Lecture03-2.pdf) |
+| 第 3 讲：物理层（三）| [FMI_Lecture03-3.pdf](slides/FMI_Lecture03-3.pdf) |
+| 第 4 讲：多路复用与交换 | [FMI_Lecture04.pdf](slides/FMI_Lecture04.pdf) |
+| 第 5 讲：传输媒介 | [FMI_Lecture05.pdf](slides/FMI_Lecture05.pdf) |
+| 第 6 讲：媒体接入控制 | [FMI_Lecture06.pdf](slides/FMI_Lecture06.pdf) |
+
+## 实验
+
+Wireshark 抓包实验，涵盖从 IP 层到应用层的协议分析。详见 [labs/README.md](labs/README.md)。
