@@ -35,6 +35,21 @@
 | 第 5 讲：传输媒介 | [FMI_Lecture05.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture05.pdf) |
 | 第 6 讲：媒体接入控制 | [FMI_Lecture06.pdf](https://github.com/multimodal-vision-ai/courses/raw/main/future-media-internet/slides/FMI_Lecture06.pdf) |
 
+
 ## 实验
+
+Wireshark 抓包实验，涵盖从 IP 层到应用层的协议分析。详见 [labs/README.md](labs/README.md)。
+
+### 课堂演示（Kaggle）
+
+以下 Notebook 可直接在 Kaggle 上运行，适合课堂投影演示：
+
+- [实验一：AI 流量分类](labs/kaggle-demos/demo1-traffic-classification.ipynb)
+- [实验二：自适应视频流 QoE](labs/kaggle-demos/demo2-qoe-optimization.ipynb)
+- [实验三：AI 视频质量评估](labs/kaggle-demos/demo3-quality-assessment.ipynb)
+- [实验四：神经压缩 vs JPEG](labs/kaggle-demos/demo4-neural-compression.ipynb)
+- [实验五：语义通信](labs/kaggle-demos/demo5-semantic-communication.ipynb)
+
+Kaggle 部署说明：[kaggle-demos/README.md](labs/kaggle-demos/README.md)
 
 Wireshark 抓包实验，涵盖从 IP 层到应用层的协议分析。详见 [labs/README.md](labs/README.md)。
