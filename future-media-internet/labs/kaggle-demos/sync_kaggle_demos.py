@@ -1,4 +1,4 @@
-"""Sync the seven FMI demo notebooks from Kaggle into this directory."""
+"""Sync the FMI course navigator and seven demos from Kaggle."""
 
 from __future__ import annotations
 
@@ -10,6 +10,9 @@ from kaggle.api.kaggle_api_extended import ApiGetKernelRequest, KaggleApi
 
 
 NOTEBOOKS = {
+    "00-start-here.ipynb": (
+        "guopingtan/fmi-course-kaggle-hands-on-lab-start-here"
+    ),
     "demo1-traffic-classification.ipynb": "guopingtan/fmi-demo1-traffic-classification",
     "demo2-qoe-optimization.ipynb": "guopingtan/fmi-demo2-qoe-optimization",
     "demo3-quality-assessment.ipynb": "guopingtan/fmi-demo3-quality-assessment",
