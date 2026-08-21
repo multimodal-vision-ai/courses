@@ -9,8 +9,8 @@
 | Demo 3 | Video Quality Assessment | https://www.kaggle.com/code/guopingtan/fmi-demo3-quality-assessment |
 | Demo 4 | Neural Compression vs JPEG | https://www.kaggle.com/code/guopingtan/fmi-demo4-neural-compression |
 | Demo 5 | Semantic Communication | https://www.kaggle.com/code/guopingtan/fmi-demo5-semantic-communication |
-| Demo 6 | HD Video Network Impairments | https://www.kaggle.com/code/guopingtan/fmi-demo6-hd-impairments |
-| Demo 7 | VR Video Network Impairments | https://www.kaggle.com/code/guopingtan/fmi-demo7-vr-impairments |
+| Demo 6 | HD Video Network Impairments | https://www.kaggle.com/code/guopingtan/fmi-demo-6-network-impairments-on-hd-video |
+| Demo 7 | VR Video Network Impairments | https://www.kaggle.com/code/guopingtan/fmi-demo-7-network-impairments-on-vr-360-video |
 
 ## Usage
 
@@ -24,4 +24,5 @@ Open any link to view pre-executed results. Click **Run All** to re-execute (req
 
 ## Update
 
-Edit `.ipynb` files locally, then run `push_cli.py` to upload all 7 notebooks.
+Treat Kaggle as the latest version. Run `python sync_kaggle_demos.py`, review
+`git diff`, then commit the synchronized notebooks to GitHub.
